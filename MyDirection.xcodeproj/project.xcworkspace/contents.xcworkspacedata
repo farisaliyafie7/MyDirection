@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MyLocation.xcodeproj">
+      location = "self:/Users/farisaliyafie/Documents/Swift/Latihan/MyLocation/MyDirection.xcodeproj">
    </FileRef>
 </Workspace>

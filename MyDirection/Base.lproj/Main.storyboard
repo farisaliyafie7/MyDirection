@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyLocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sqa-dy-evT">
+                                <rect key="frame" x="0.0" y="82" width="375" height="696"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Byu-a3-7wx">
+                                <rect key="frame" x="16" y="44" width="237" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="OX2-Ud-NBX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTp-lO-mST">
+                                <rect key="frame" x="261" y="44" width="98" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8ux-9Y-m7y"/>
+                                    <constraint firstAttribute="width" constant="98" id="uLg-EV-5QE"/>
+                                </constraints>
+                                <state key="normal" title="Get Directions"/>
+                                <connections>
+                                    <action selector="directionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wll-OR-rJH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jTp-lO-mST" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Rc-bj-6nR"/>
+                            <constraint firstItem="sqa-dy-evT" firstAttribute="top" secondItem="jTp-lO-mST" secondAttribute="bottom" constant="8" id="5a3-dE-Uhd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sqa-dy-evT" secondAttribute="trailing" id="C91-G2-Qvb"/>
+                            <constraint firstItem="jTp-lO-mST" firstAttribute="leading" secondItem="Byu-a3-7wx" secondAttribute="trailing" constant="8" id="D9y-Y3-ued"/>
+                            <constraint firstItem="Byu-a3-7wx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XNb-Dl-dbG"/>
+                            <constraint firstItem="Byu-a3-7wx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Y3A-o1-coY"/>
+                            <constraint firstItem="sqa-dy-evT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dX9-tf-GzD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jTp-lO-mST" secondAttribute="trailing" constant="16" id="gMn-OF-5Cd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sqa-dy-evT" secondAttribute="bottom" id="kpM-wd-dVP"/>
+                            <constraint firstItem="sqa-dy-evT" firstAttribute="top" secondItem="Byu-a3-7wx" secondAttribute="bottom" constant="4" id="uPm-nh-Ts9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="MapView" destination="sqa-dy-evT" id="783-Vn-jse"/>
+                        <outlet property="directionButton" destination="jTp-lO-mST" id="6Rk-vf-YPG"/>
+                        <outlet property="findLocationTextField" destination="Byu-a3-7wx" id="H0e-KU-MVM"/>
+                        <outlet property="mapView" destination="sqa-dy-evT" id="ccS-ki-nWc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="137.4384236453202"/>
+        </scene>
+    </scenes>
+</document>

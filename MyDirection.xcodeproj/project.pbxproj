@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AE51E51A24619E1400780234 /* MyLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE51E51A24619E1400780234 /* MyDirection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDirection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE51E51D24619E1400780234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE51E51F24619E1400780234 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AE51E52124619E1400780234 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		AE51E51124619E1400780234 = {
 			isa = PBXGroup;
 			children = (
-				AE51E51C24619E1400780234 /* MyLocation */,
+				AED04DD62472C18200254394 /* MyDirection */,
 				AE51E51B24619E1400780234 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		AE51E51B24619E1400780234 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE51E51A24619E1400780234 /* MyLocation.app */,
+				AE51E51A24619E1400780234 /* MyDirection.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE51E51C24619E1400780234 /* MyLocation */ = {
+		AED04DD62472C18200254394 /* MyDirection */ = {
 			isa = PBXGroup;
 			children = (
 				AE51E51D24619E1400780234 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				AE51E52824619E1600780234 /* LaunchScreen.storyboard */,
 				AE51E52B24619E1600780234 /* Info.plist */,
 			);
-			path = MyLocation;
+			path = MyDirection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AE51E51924619E1400780234 /* MyLocation */ = {
+		AE51E51924619E1400780234 /* MyDirection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE51E52E24619E1600780234 /* Build configuration list for PBXNativeTarget "MyLocation" */;
+			buildConfigurationList = AE51E52E24619E1600780234 /* Build configuration list for PBXNativeTarget "MyDirection" */;
 			buildPhases = (
 				AE51E51624619E1400780234 /* Sources */,
 				AE51E51724619E1400780234 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = MyLocation;
+			name = MyDirection;
 			productName = MyLocation;
-			productReference = AE51E51A24619E1400780234 /* MyLocation.app */;
+			productReference = AE51E51A24619E1400780234 /* MyDirection.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AE51E51524619E1400780234 /* Build configuration list for PBXProject "MyLocation" */;
+			buildConfigurationList = AE51E51524619E1400780234 /* Build configuration list for PBXProject "MyDirection" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE51E51924619E1400780234 /* MyLocation */,
+				AE51E51924619E1400780234 /* MyDirection */,
 			);
 		};
 /* End PBXProject section */
@@ -286,15 +286,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LU7959C5GC;
-				INFOPLIST_FILE = MyLocation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyDirection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AppleAcademy.MyLocation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = AppleAcademy.MyDirection;
+				PRODUCT_NAME = MyDirection;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,22 +304,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LU7959C5GC;
-				INFOPLIST_FILE = MyLocation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyDirection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AppleAcademy.MyLocation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = AppleAcademy.MyDirection;
+				PRODUCT_NAME = MyDirection;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AE51E51524619E1400780234 /* Build configuration list for PBXProject "MyLocation" */ = {
+		AE51E51524619E1400780234 /* Build configuration list for PBXProject "MyDirection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE51E52C24619E1600780234 /* Debug */,
@@ -328,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE51E52E24619E1600780234 /* Build configuration list for PBXNativeTarget "MyLocation" */ = {
+		AE51E52E24619E1600780234 /* Build configuration list for PBXNativeTarget "MyDirection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE51E52F24619E1600780234 /* Debug */,
